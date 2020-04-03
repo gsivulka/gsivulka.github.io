@@ -82,6 +82,10 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this template -->
+  <link href="css/resume.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
   <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
@@ -90,9 +94,7 @@
 
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/resume.css" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 	
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157284380-1"></script>
@@ -103,11 +105,27 @@
 
   gtag('config', 'UA-157284380-1');
   </script>
+
+
+
+
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	
+	<!-- Show site once loaded -->
+	<script> 
+		$(window).on('load', function() {
+			$("#cover").hide();
+		});
+	</script>
 	
 </head>
 
 <body id="page-top">
+
+
+	<div id="cover"></div>
+
 
   <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -146,7 +164,7 @@
     </div>
   </nav>
 
-  <div class="container-fluid p-0">
+  <div class="container-fluid p-0" id="">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">

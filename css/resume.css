@@ -6,11 +6,6 @@
 
 
 
-
-
-
-
-
 body {
   font-family: "Quicksand", Arial, sans-serif;
   padding-top: 54px;
@@ -44,6 +39,8 @@ body {
     
 
 }
+
+
 
 h1{
   font-size: 5rem;
@@ -241,5 +238,14 @@ a:hover, a:focus, a:active {
     max-width: 20em;    
     vertical-align: middle;
 }
+
+
+
+
+#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #fff; z-index:9999;}
+
+
+#cover2 {display: none;}
+
 
 
